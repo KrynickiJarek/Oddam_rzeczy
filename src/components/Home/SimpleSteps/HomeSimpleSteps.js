@@ -5,7 +5,7 @@ const HomeSimpleSteps = () => {
 
     return (
         <>
-
+            <p>HomeSimpleSteps</p>
         </>
 
     );

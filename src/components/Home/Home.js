@@ -10,7 +10,7 @@ import HomeContact from "./Contact/HomeContact";
 
 const Home = () => {
     return (
-        <HomeContact>
+        <>
             {/*<ScrollArrow/>*/}
             <HomeHeader/>
             <HomeThreeColumns/>

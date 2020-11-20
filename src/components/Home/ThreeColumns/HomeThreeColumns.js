@@ -1,11 +1,11 @@
 import React from 'react';
-import "../../../scss/_homethreecolums.scss";
+import "../../../scss/_homethreecolumns.scss";
 
 const HomeThreeColumns = () => {
 
     return (
         <>
-
+            <p id="threecolumns">HomeThreeColumns</p>
         </>
 
     );

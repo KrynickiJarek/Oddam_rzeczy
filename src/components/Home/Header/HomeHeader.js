@@ -1,35 +1,95 @@
-
 import React from 'react';
+// import React, {useState} from 'react';
 import {Link} from "react-router-dom";
+import {Link as LinkScroll} from "react-scroll";
 import "../../../scss/_homeheader.scss";
 import decoration from "../../../assets/Decoration.svg"
-// import Nav from "../Nav/Nav";
 
 const HomeHeader = () => {
-    const linkStyle = {
-        textDecoration: "none",
-        color: "#3c3c3c",
-    }
+
+    // const [userLinkStyle, setUserLinkStyle] = useState(false);
+    // const [navLinkStyle, setNavLinkStyle] = useState(false);
+
+
     return (
-        <div className="container">
-            <div className="img1"/>
-            <div className="content_container">
-                <div className="container_links-1">
-                    <Link to={"/logIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
-                    <Link to={"/register"}  style={linkStyle}><p className="link_text">Załóż konto</p></Link>
+        <header className="header_container">
+            <div className="header_image"/>
+            <div className="top_menu">
+                <div className="user_menu">
+                    {/*<h3 className="h3_welcome">Witaj [nazwa użytkownika]</h3>*/}
+                    <Link to={"/logowanie"} className="user_link"><p className="user_menu-logIn">Zaloguj</p></Link>
+                    <Link to={"/rejestracja"} className="user_link"><p className="user_menu-register">Załóż konto</p>
+                    </Link>
                 </div>
-                {/*<Nav/>*/}
-                <div className="main_container" id="maincontainer">
-                    <p>Zacznij pomagać!</p>
-                    <p>Oddaj niechciane rzeczy w zaufane ręce</p>
-                    <img src={decoration} alt="decoration"/>
-                    <div className="main_container-links">
-                        <Link to={"/giveAway"} style={linkStyle}><p className="link_text3">ODDAJ RZECZY</p></Link>
-                        <Link to={"/organize"} style={linkStyle}><p className="link_text3">ZORGANIZUJ ZBIÓRKĘ</p></Link>
+                <div className="navigation_menu">
+                    <LinkScroll
+                        activeClass="active"
+                        to="threecolumns"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="navigation_link navigation_startLink">
+                        Start
+                    </LinkScroll>
+                    <LinkScroll
+                        activeClass="active"
+                        to="4steps_container"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="navigation_link">
+                        O co chodzi?
+                    </LinkScroll>
+                    <LinkScroll
+                        activeClass="active"
+                        to="aboutcontainer"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="navigation_link">
+                        O nas
+                    </LinkScroll>
+                    <LinkScroll
+                        activeClass="active"
+                        to="whoWeHelp_container"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="navigation_link">
+                        Fundacja i organizacja
+                    </LinkScroll>
+                    <LinkScroll
+                        activeClass="active"
+                        to="footer_container"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="navigation_link">
+                        Kontakt
+                    </LinkScroll>
+                </div>
+                <div className="header_content">
+                    <h2 className="content_tittle">
+                        Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce
+                    </h2>
+                    <img src={decoration} alt=" decoration" className=" content_decoration"/>
+                    <div className=" content_links">
+                        <Link to={"/logowanie"} className="content_link">
+                        <p className="content_link-give">ODDAJ <br/>RZECZY</p>
+                        </Link>
+                        <Link to={"/logowanie"} className="content_link">
+                            <p className="content_link-organize">ZORGANIZUJ <br/>ZBIÓRKĘ</p>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
+
 
     );
 };

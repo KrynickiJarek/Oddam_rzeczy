@@ -1,5 +1,135 @@
 @import "settings/colors";
 @import "settings/fonts";
+
+.header_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .header_image {
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+  }
+
+  .top_menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+
+    .user_menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+
+      .h3_welcome {
+        font-family: $font-base;
+        font-size: 0.875rem;
+        margin-right: 0.75rem;
+        color: $black;
+      }
+
+      .user_link {
+        text-decoration: none;
+
+        .user_menu-logIn, .user_menu-register {
+          font-family: $font-base;
+          font-size: 0.8125rem;
+          padding: 0.5rem;
+          margin-left: 0.5rem;
+          color: $grey;
+        }
+
+        .user_menu-logIn:hover, .user_menu-register:hover {
+          color: $black;
+        }
+
+        .user_menu-register {
+          border: 1px solid $yellow;
+        }
+      }
+    }
+  }
+
+  .navigation_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateX(1.25rem);
+
+
+    .navigation_link {
+      font-family: $font-base;
+      color: $dark-grey;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 0.5rem 1.25rem;
+      margin-left: 1.5rem;
+      white-space: nowrap;
+      cursor: pointer; //// to delete
+    }
+
+    .navigation_startLink {
+      border: 1px solid $dark-grey;
+    }
+  }
+
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 8rem;
+
+    .content_tittle {
+      font-family: $font-base;
+      color: $dark-grey;
+      font-size: 2.4rem;
+      line-height: 3.5rem;
+      text-align: center;
+      margin-top: 25%;
+    }
+
+    .content_decoration {
+      width: 16rem;
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .content_links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+
+      .content_link {
+        text-decoration: none;
+        width: 45%;
+
+        .content_link-give, .content_link-organize, {
+          font-family: $font-base;
+          font-weight: 300;
+          font-size: 2.25rem;
+          line-height: 2.85rem;
+          padding: 0.8rem 0;
+
+          color: $grey;
+          border: 1px solid $dark-grey;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
 //
 //.container {
 //  height: 100vh;

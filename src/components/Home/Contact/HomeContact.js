@@ -5,7 +5,7 @@ const HomeContact = () => {
 
     return (
         <>
-
+            <p>HomeContact</p>
         </>
 
     );
