@@ -1,13 +1,13 @@
 @import "settings/colors";
 @import "settings/fonts";
 
-.aboutUs_container{
+.aboutUs_container {
   width: 100%;
   height: 100vh;
   display: flex;
   background-color: $light-grey;
 
-  .aboutUs_content{
+  .aboutUs_content {
     height: 100%;
     width: 50%;
     display: flex;
@@ -29,9 +29,25 @@
       margin-top: 1.5rem;
       margin-bottom: 4rem;
     }
+
+    .content_text {
+      width: 70%;
+      font-family: $font-base;
+      color: $dark-grey;
+      font-size: 1.875rem;
+      line-height: 3.375rem;
+      text-align: center;
+    }
+
+    .content_signature {
+      width: 13rem;
+      margin-top: 2.5rem;
+      align-self: flex-end;
+      margin-right: 15%;
+    }
   }
 
-  .aboutUs_image{
+  .aboutUs_image {
     background-image: url("../assets/People.jpg");
     background-size: cover;
     background-position: center;
