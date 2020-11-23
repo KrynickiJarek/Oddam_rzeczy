@@ -1,2 +1,101 @@
 @import "settings/colors";
 @import "settings/fonts";
+
+.simpleSteps_container {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  .simpleSteps_container-head {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .simpleSteps-head {
+      font-family: $font-base;
+      color: $dark-grey;
+      font-size: 2.4rem;
+      line-height: 3.5rem;
+      text-align: center;
+    }
+
+    .simpleSteps-decoration {
+      width: 16rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .simpleSteps_container-icons {
+    background-color: $light-grey;
+    min-height: 325px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .icon_container {
+      max-width: 8%;
+      margin: 0 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .icon_container-icon {
+        height: 5.25rem;
+      }
+
+      .icon_container-head {
+        font-family: $font-base;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: $dark-grey;
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+
+      .icon_container-decoration {
+        height: 1px;
+        width: 5rem;
+        background-color: $dark-grey;
+      }
+
+      .icon_container-text {
+        font-family: $font-base;
+        font-size: 1.125rem;
+        line-height: 1rem;
+        color: $dark-grey;
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .simpleSteps_container-button {
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .button_link {
+      text-decoration: none;
+      width: 20rem;
+      margin-top: 2.5rem;
+
+      .button_text {
+        font-family: $font-base;
+        font-weight: 300;
+        font-size: 2.25rem;
+        line-height: 2.85rem;
+        padding: 0.8rem 0;
+        color: $grey;
+        border: 1px solid $dark-grey;
+        text-align: center;
+
+      }
+    }
+  }
+}

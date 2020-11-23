@@ -24,30 +24,27 @@ const HomeHeader = () => {
                 <div className="navigation_menu">
                     <LinkScroll
                         activeClass="active"
-                        to="threecolumns"
+                        to="threeColumns"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         className="navigation_link navigation_startLink">
                         Start
                     </LinkScroll>
                     <LinkScroll
                         activeClass="active"
-                        to="4steps_container"
+                        to="simpleSteps"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         className="navigation_link">
                         O co chodzi?
                     </LinkScroll>
                     <LinkScroll
                         activeClass="active"
-                        to="aboutcontainer"
+                        to="aboutUs"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         className="navigation_link">
                         O nas
@@ -57,7 +54,6 @@ const HomeHeader = () => {
                         to="whoWeHelp_container"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         className="navigation_link">
                         Fundacja i organizacja
@@ -67,7 +63,7 @@ const HomeHeader = () => {
                         to="footer_container"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        // offset={-70}
                         duration={500}
                         className="navigation_link">
                         Kontakt
@@ -77,7 +73,7 @@ const HomeHeader = () => {
                     <h2 className="content_tittle">
                         Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce
                     </h2>
-                    <img src={decoration} alt=" decoration" className=" content_decoration"/>
+                    <img src={decoration} alt="decoration" className=" content_decoration"/>
                     <div className=" content_links">
                         <Link to={"/logowanie"} className="content_link">
                         <p className="content_link-give">ODDAJ <br/>RZECZY</p>
@@ -89,8 +85,6 @@ const HomeHeader = () => {
                 </div>
             </div>
         </header>
-
-
     );
 };
 
