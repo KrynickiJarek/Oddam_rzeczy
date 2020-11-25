@@ -51,7 +51,7 @@ const HomeHeader = () => {
                     </LinkScroll>
                     <LinkScroll
                         activeClass="active"
-                        to="whoWeHelp_container"
+                        to="whoWeHelp"
                         spy={true}
                         smooth={true}
                         duration={500}
