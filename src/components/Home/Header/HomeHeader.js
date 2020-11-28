@@ -7,8 +7,6 @@ import decoration from "../../../assets/Decoration.svg"
 
 const HomeHeader = () => {
 
-    // const [userLinkStyle, setUserLinkStyle] = useState(false);
-    // const [navLinkStyle, setNavLinkStyle] = useState(false);
 
 
     return (
@@ -16,7 +14,6 @@ const HomeHeader = () => {
             <div className="header_image"/>
             <div className="top_menu">
                 <div className="user_menu">
-                    {/*<h3 className="h3_welcome">Witaj [nazwa użytkownika]</h3>*/}
                     <Link to={"/logowanie"} className="user_link"><p className="user_menu-logIn">Zaloguj</p></Link>
                     <Link to={"/rejestracja"} className="user_link"><p className="user_menu-register">Załóż konto</p>
                     </Link>
@@ -60,7 +57,7 @@ const HomeHeader = () => {
                     </LinkScroll>
                     <LinkScroll
                         activeClass="active"
-                        to="footer_container"
+                        to="contact"
                         spy={true}
                         smooth={true}
                         // offset={-70}

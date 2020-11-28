@@ -15,10 +15,7 @@ const HomeAboutUs = () => {
                 <img src={signature} alt="signature" className=" content_signature"/>
             </div>
             <div className="aboutUs_image"/>
-
-
         </div>
-
     );
 };
 

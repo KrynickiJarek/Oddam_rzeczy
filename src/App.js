@@ -1,13 +1,14 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom"; /// as Router
-import {Route} from "react-router-dom";
+import {Switch, Route} from "react-router-dom"; /// as Router
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
 
 const App = () => {
   return (
-      <BrowserRouter>
+      <Switch>
         <Route exact path={"/"} component={Home}/>
-      </BrowserRouter>
+        <Route exact path={"/logowanie"} component={Login}/>
+      </Switch>
 
   );
 };
