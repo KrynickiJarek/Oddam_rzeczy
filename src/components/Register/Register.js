@@ -2,6 +2,7 @@ import React from 'react';
 import "../../scss/_login.scss";
 import "../../scss/_register.scss";
 import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 import {useForm} from "react-hook-form";
 import decoration from "../../assets/Decoration.svg"
 
@@ -19,17 +20,16 @@ const Register = () => {
                     </Link>
                 </div>
                 <div className="navigation_menu">
-                    <Link to={"/"} className="navigation_link">Start</Link>
-                    <Link to={"/#simpleSteps"} className="navigation_link">O co chodzi?</Link>
-                    <Link to={"/#aboutUs"} className="navigation_link">O nas</Link>
-                    <Link to={"/#whoWeHelp"} className="navigation_link">Fundacja i organizacja</Link>
-                    {/*<Link to={"/#contact"} className="navigation_link">Kontakt</Link>*/}
-                    <Link to={"/${contact}"} className="navigation_link">Kontakt</Link>
+                    <HashLink to={"/"} className="navigation_link">Start</HashLink>
+                    <HashLink to={"/#simpleSteps"} className="navigation_link">O co chodzi?</HashLink>
+                    <HashLink to={"/#aboutUs"} className="navigation_link">O nas</HashLink>
+                    <HashLink to={"/#whoWeHelp"} className="navigation_link">Fundacja i organizacja</HashLink>
+                    <HashLink to={"/#contact"} className="navigation_link">Kontakt</HashLink>
                 </div>
             </div>
 
             <form onSubmit={handleSubmit(onSubmit)} className="registerForm_container">
-                <h2 className="content_tittle">Zaloguj się</h2>
+                <h2 className="content_tittle">Załóż konto</h2>
                 <img src={decoration} alt="decoration" className=" content_decoration"/>
                 <div className="input_container">
                     <label className="form_text">Email
