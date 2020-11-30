@@ -6,7 +6,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  //justify-content: space-between;
   justify-content: flex-start;
 
 
@@ -69,7 +68,13 @@
       padding: 0.5rem 1.25rem;
       margin-left: 1.5rem;
       white-space: nowrap;
-      cursor: pointer; //// to delete
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .navigation_link:hover {
+      border: 1px solid $dark-grey;
     }
   }
 
