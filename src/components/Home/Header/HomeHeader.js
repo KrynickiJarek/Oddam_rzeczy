@@ -60,7 +60,6 @@ const HomeHeader = () => {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        // offset={-70}
                         duration={500}
                         className="navigation_link">
                         Kontakt
