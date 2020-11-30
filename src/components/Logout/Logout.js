@@ -7,8 +7,6 @@ import {useForm} from "react-hook-form";
 import decoration from "../../assets/Decoration.svg"
 
 const Logout = () => {
-    const {register, handleSubmit, watch, errors} = useForm();
-    const onSubmit = data => console.log(data);
 
 
     return (

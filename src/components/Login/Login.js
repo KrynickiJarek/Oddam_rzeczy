@@ -6,7 +6,7 @@ import {useForm} from "react-hook-form";
 import decoration from "../../assets/Decoration.svg"
 
 const Login = () => {
-    const {register, handleSubmit, watch, errors} = useForm();
+    const {register, handleSubmit, errors} = useForm();
     const onSubmit = data => console.log(data);
 
 
