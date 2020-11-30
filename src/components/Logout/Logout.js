@@ -3,7 +3,6 @@ import "../../scss/_login.scss";
 import "../../scss/_logout.scss";
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
-import {useForm} from "react-hook-form";
 import decoration from "../../assets/Decoration.svg"
 
 const Logout = () => {
