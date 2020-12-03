@@ -1,5 +1,4 @@
 import React from 'react';
-// import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import {Link as LinkScroll} from "react-scroll";
 import "../../../scss/_homeheader.scss";

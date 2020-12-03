@@ -56,8 +56,8 @@ const HomeContact = () => {
                                 <input name="email"
                                        ref={register({
                                            required: true,
-                                           minLength: 3
-                                       }, {pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}
+                                           minLength: 3,
+                                           pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}
                                        className="form_input"
                                        style={errors.email && {borderBottom: "1px solid red"}}
                                        placeholder="abc@xyz.pl"/>

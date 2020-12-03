@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import "../../../scss/_homewhowehelp.scss";
 import decoration from "../../../assets/Decoration.svg";
 import {BrowserRouter} from 'react-router-dom'
-import FoundationList from "./FoundationList/FoundationList"
 import OrganizationList from "./OrganizationList/OrganizationList"
+import Foundation from "./FoundationList/Foundation";
 
 const HomeWhoWeHelp = () => {
 
@@ -65,7 +65,7 @@ const HomeWhoWeHelp = () => {
                     <p className="content_text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
                         którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
                     <BrowserRouter>
-                        <FoundationList/>
+                        <Foundation/>
                     </BrowserRouter>
                 </div>
 
