@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "../../../scss/_homewhowehelp.scss";
 import decoration from "../../../assets/Decoration.svg";
 import {BrowserRouter} from 'react-router-dom'
-import OrganizationList from "./OrganizationList/OrganizationList"
+import Organization from "./OrganizationList/Organization"
 import Foundation from "./FoundationList/Foundation";
 
 const HomeWhoWeHelp = () => {
@@ -58,7 +58,7 @@ const HomeWhoWeHelp = () => {
                        className={["nav_button", localActive].join(' ')}>Lokalnym <br/> zbiórkom</p>
                 </div>
             </div>
-            <div className="content_container">
+            <div className="pagination_container">
 
 
                 <div style={{display: showFoundation}} className="selected_container">
@@ -74,7 +74,7 @@ const HomeWhoWeHelp = () => {
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation..</p>
                     <BrowserRouter>
-                        <OrganizationList/>
+                        <Organization/>
                     </BrowserRouter>
                 </div>
 
@@ -85,30 +85,39 @@ const HomeWhoWeHelp = () => {
 
                     <div className="list_container">
                         <div className="element_container">
-                            <div className="header_container">
-                                <h2 className="header_container-head">Zbiórka “Lorem Ipsum 1”</h2>
-                                <p className="header_container-text">Quis varius quam quisque id diam vel quam elementum
-                                    pulvinar.</p>
+                            <div className="content_container">
+                                <div className="header_container">
+                                    <h2 className="header_container-head">Zbiórka “Lorem Ipsum 1”</h2>
+                                    <p className="header_container-text">Quis varius quam quisque id diam vel quam
+                                        elementum
+                                        pulvinar.</p>
+                                </div>
+                                <p className="element_container-text">Egestas, sed, tempus</p>
                             </div>
-                            <p className="element_container-text">Egestas, sed, tempus</p>
+                            <div className="element_container-line"/>
                         </div>
-                        <div className="element_container-line"/>
                         <div className="element_container">
-                            <div className="header_container">
-                                <h2 className="header_container-head">Zbiórka “Lorem Ipsum 2”</h2>
-                                <p className="header_container-text">Quis varius quam quisque id diam vel quam elementum
-                                    pulvinar.</p>
+                            <div className="content_container">
+                                <div className="header_container">
+                                    <h2 className="header_container-head">Zbiórka “Lorem Ipsum 2”</h2>
+                                    <p className="header_container-text">Quis varius quam quisque id diam vel quam
+                                        elementum
+                                        pulvinar.</p>
+                                </div>
+                                <p className="element_container-text">Egestas, sed, tempus</p>
                             </div>
-                            <p className="element_container-text">Egestas, sed, tempus</p>
+                            <div className="element_container-line"/>
                         </div>
-                        <div className="element_container-line"/>
                         <div className="element_container">
-                            <div className="header_container">
-                                <h2 className="header_container-head">Zbiórka “Lorem Ipsum 3”</h2>
-                                <p className="header_container-text">Quis varius quam quisque id diam vel quam elementum
-                                    pulvinar.</p>
+                            <div className="content_container">
+                                <div className="header_container">
+                                    <h2 className="header_container-head">Zbiórka “Lorem Ipsum 3”</h2>
+                                    <p className="header_container-text">Quis varius quam quisque id diam vel quam
+                                        elementum
+                                        pulvinar.</p>
+                                </div>
+                                <p className="element_container-text">Egestas, sed, tempus</p>
                             </div>
-                            <p className="element_container-text">Egestas, sed, tempus</p>
                         </div>
                     </div>
                     <div className="pagination_buttons">

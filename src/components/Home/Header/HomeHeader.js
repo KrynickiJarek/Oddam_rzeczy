@@ -52,7 +52,7 @@ const HomeHeader = () => {
                         smooth={true}
                         duration={500}
                         className="navigation_link">
-                        Fundacja i organizacja
+                        Fundacja i organizacje
                     </LinkScroll>
                     <LinkScroll
                         activeClass="active"
