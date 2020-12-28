@@ -68,7 +68,7 @@ const Foundation = () => {
                             </div>
                             <p className="content_container-text">{foundation.need}</p>
                         </div>
-                        <div className="element_container-line"/>
+                        {foundation.id%postPerPage!==0 && <div className="element_container-line"/>}
                     </div>
 
                 ))}

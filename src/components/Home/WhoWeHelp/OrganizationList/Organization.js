@@ -86,7 +86,7 @@ const Organization = () => {
                             </div>
                             <p className="content_container-text">{organization.need}</p>
                         </div>
-                        <div className="element_container-line"/>
+                        {organization.id%postPerPage!==0 && <div className="element_container-line"/>}
                     </div>
 
                 ))}

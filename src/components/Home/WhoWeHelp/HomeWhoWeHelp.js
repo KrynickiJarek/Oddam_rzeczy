@@ -53,7 +53,7 @@ const HomeWhoWeHelp = () => {
                     <p onClick={handleClickFoundation}
                        className={["nav_button", foundationActive].join(' ')}>Fundacjom</p>
                     <p onClick={handleClickOrganization}
-                       className={["nav_button", organizationActive].join(' ')}>Organizacjom <br/>samorządowym</p>
+                       className={["nav_button", organizationActive].join(' ')}>Organizacjom <br/>pozarządowym</p>
                     <p onClick={handleClickLocal}
                        className={["nav_button", localActive].join(' ')}>Lokalnym <br/> zbiórkom</p>
                 </div>
