@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../../../scss/_homewhowehelp.scss";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 const Pagination = ({postPerPage, totalPost, paginate, active}) => {
     const pageNumbers = [];
